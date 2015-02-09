@@ -1,0 +1,25 @@
+{% extends 'MmiBootstrapBundle::layout.html.twig' %}
+
+{% block body %}
+        
+   {% block navbar %}ici, un menu il y aura... poil au caca{% endblock navbar %}
+
+    {% block container %}
+    <div class="{% block container_class %}container{% endblock container_class %}">
+        {% block header %}{% endblock header %}
+        {% block content_row %}
+        <div class="row">
+            {% block content %}
+            <section class="col-sm-9">
+                {% block content_content %}{% endblock content_content %}
+            </section>
+            <aside class="col-sm-3">
+                {% block content_sidebar %}prout la sidebar{% endblock content_sidebar %}
+            </aside>
+            {% endblock content %}
+        </div>
+        {% endblock content_row %}
+        {% block footer %}{% endblock footer %}
+    {% endblock container %}
+
+{% endblock body %}

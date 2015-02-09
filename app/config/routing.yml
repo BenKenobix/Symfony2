@@ -1,3 +1,8 @@
+mmi_blog:
+    resource: "@MmiBlogBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 mmi_bootstrap:
     resource: "@MmiBootstrapBundle/Controller/"
     type:     annotation
